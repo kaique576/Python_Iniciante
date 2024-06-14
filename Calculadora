@@ -17,6 +17,7 @@ while True:
      break
   else: EscolhaOpera != ''
   print('Valor aceito!')
+  print('linha boba, pode apagar')
   break
 
   if EscolhaOpera == 4 and n2 == 0:
