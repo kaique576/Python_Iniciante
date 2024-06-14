@@ -9,6 +9,12 @@ while True:
     print('Não aceito valor vazio! Escolha uma operação')
     EscolhaOpera = int(input(' Digite 1-Soma. 2-Subtração. 3-Multiplicação. 4-Divisão. 5-Potenciação '))
     break
+  elif n1 == '':
+     print('Campo vazio!')
+     break
+  elif n2 == '':
+     print('Campo vazio!')
+     break
   else: EscolhaOpera != ''
   print('Valor aceito!')
   break
