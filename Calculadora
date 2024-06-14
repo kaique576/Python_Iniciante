@@ -1,0 +1,39 @@
+print('Bom dia/Boa tarde ou Boa noite!')
+print('Escolha uma das opções de operação aritméticas: ')
+EscolhaOpera = int(input(' Digite 1-Soma. 2-Subtração. 3-Multiplicação. 4-Divisão. 5-Potenciação '))
+n1 = float(input('Digite o primeiro número: '))
+n2 = float(input('Digite o segundo número: '))
+
+while True:
+  if EscolhaOpera == '':
+    print('Não aceito valor vazio! Escolha uma operação')
+    EscolhaOpera = int(input(' Digite 1-Soma. 2-Subtração. 3-Multiplicação. 4-Divisão. 5-Potenciação '))
+    break
+  else: EscolhaOpera != ''
+  print('Valor aceito!')
+  break
+
+  if EscolhaOpera == 4 and n2 == 0:
+   print('Não aceito divisão por zero')
+  n2 = float(input('Digite o segundo número: '))
+  break
+
+else: EscolhaOpera == 4 and n2 != 0
+print('Valor aceito')
+print('Divisão normal: ', n1/n2)
+print('Divisão inteira: ', n1//n2)
+print('Resto de  divisão: ', n1%n2)
+
+
+if EscolhaOpera  == 1:
+    print('O resultado dessa soma é :  ', n1+n2)
+elif EscolhaOpera  == 2:
+   print('O resultado dessa subtração é: ', n1-n2)
+elif EscolhaOpera  == 3:
+   print('O resultado dessa multiplicação: ', n1*n2)
+elif EscolhaOpera  == 4:
+   print('Divisão normal: ', n1/n2)
+   print('Divisão inteira: ', n1//n2)
+   print('Resto de  divisão : ', n1%n2)
+elif EscolhaOpera  == 5:
+   print('O resultado dessa exponenciação ou potenciação: ', pow(n1,n2))
