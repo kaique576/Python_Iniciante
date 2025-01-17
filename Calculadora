@@ -4,23 +4,8 @@ EscolhaOpera = int(input(' Digite 1-Soma. 2-Subtração. 3-Multiplicação. 4-Di
 n1 = float(input('Digite o primeiro número: '))
 n2 = float(input('Digite o segundo número: '))
 
-while True:
-  if EscolhaOpera == '':
-    print('Não aceito valor vazio! Escolha uma operação')
-    EscolhaOpera = int(input(' Digite 1-Soma. 2-Subtração. 3-Multiplicação. 4-Divisão. 5-Potenciação '))
-    break
-  elif n1 == '':
-     print('Campo vazio!')
-     break
-  elif n2 == '':
-     print('Campo vazio!')
-     break
-  else: EscolhaOpera != ''
-  print('Valor aceito!')
-  
-
-  if EscolhaOpera == 4 and n2 == 0:
-   print('Não aceito divisão por zero')
+if EscolhaOpera == 4 and n2 == 0:
+  print('Não aceito divisão por zero')
   n2 = float(input('Digite o segundo número: '))
   
 else: EscolhaOpera == 4 and n2 != 0
@@ -28,7 +13,6 @@ print('Valor aceito')
 print('Divisão normal: ', n1/n2)
 print('Divisão inteira: ', n1//n2)
 print('Resto de  divisão: ', n1%n2)
- 
 
 if EscolhaOpera  == 1:
     print('O resultado dessa soma é :  ', n1+n2)
